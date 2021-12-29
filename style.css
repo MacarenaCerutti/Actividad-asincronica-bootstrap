@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('Diseño sin título.png');
+}
+
+
+header {
+  background-color: rgb(6, 110, 158);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+nav {
+  float: left;
+  width: 30%;
+  height: 700px; 
+  background: rgb(221, 214, 214);
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height: 700px; 
+  background-image: url('Diseño sin título.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(6, 110, 158);
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+    background: rgb(6, 110, 158);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+#ic1{
+  width: 40px;
+  height: 40px;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
